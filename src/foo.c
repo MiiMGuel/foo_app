@@ -2,10 +2,6 @@
 #include <stdlib.h>
 #include <memory.h>
 
-#ifdef _WIN32
-#define WIN32_CONSOLE
-#endif
-
 #include "main.h"
 #include "types.h"
 
