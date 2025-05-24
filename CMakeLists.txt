@@ -14,7 +14,6 @@ add_executable(foo)
 target_sources(
     foo
     PRIVATE
-    ${PROJECT_SOURCE_DIR}/src/main.c
     ${PROJECT_SOURCE_DIR}/src/foo.c
 )
 
