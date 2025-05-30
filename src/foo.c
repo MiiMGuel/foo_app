@@ -6,8 +6,8 @@
 #include "main.c"
 
 typedef struct foo_data {
-    int32_t argc;
     char** argv;
+    int32_t argc;
 } foo_data_t;
 
 static void _foo_start(uintptr_t* app_data) {
@@ -32,7 +32,7 @@ static void _foo_run(uintptr_t* app_data) {
 }
 
 app_info_t main_app(int argc, char* argv[]) {
-    foo_data_t* data = malloc(sizeof(foo_data_t));
+    foo_data_t* data = (foo_data_t*)malloc(sizeof(foo_data_t));
     memset(data, 0, sizeof(foo_data_t));
     
     data->argc = argc;

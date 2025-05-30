@@ -28,5 +28,6 @@ int main(int argc, char* argv[]) {
         _main_app.start(_main_app.app_data);
     if (_main_app.run != NULL) 
         _main_app.run(_main_app.app_data);
-    return 0;
+    
+    return close;
 }
