@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <memory.h>
 
-#include "main.c"
+#include "core/main.h"
 
 typedef struct foo_data {
     char** argv;
